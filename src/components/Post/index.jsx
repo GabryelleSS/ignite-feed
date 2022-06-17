@@ -11,6 +11,11 @@ import {
   contentText,
   authorWebsite,
   hashtags,
+  formComment,
+  formCommentText,
+  formCommentTextarea,
+  formCommentFooter,
+  formCommentButton
 } from './styles.module.css';
 
 export const Post = () => {
@@ -51,7 +56,24 @@ export const Post = () => {
           <a className={hashtags} href="">#rocketseat</a>
         </p>
       </div>
-      <div className=""></div>
+      <form className={formComment}>
+        <strong 
+          className={formCommentText}
+          >
+            Deixe seu feedback
+        </strong>
+        <textarea 
+          className={formCommentTextarea} 
+          placeholder="Deixe um comentário" 
+        />
+        <footer className={formCommentFooter}>
+          <button 
+            className={formCommentButton} 
+            type="submit">
+              Publicar
+          </button>
+        </footer>
+      </form>
     </article>
   );
 };
