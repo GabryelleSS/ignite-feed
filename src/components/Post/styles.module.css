@@ -123,3 +123,7 @@
 .formCommentButton:hover {
   background-color: var(--green-300);
 }
+
+.commentList {
+  margin-top: 2rem;
+}

@@ -1,0 +1,85 @@
+.comment {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.avatar {
+  border-radius: 8px;
+  height: 3rem;
+  width: 3rem;
+}
+
+.commentBox {
+  flex: 1;
+}
+
+.commentContent {
+  background-color: var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.commentContentHeader {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerAuthor {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.headerTime {
+  color: var(--gray-400);
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.headerBtnDelete {
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+}
+
+.headerBtnDelete:hover {
+  color: var(--red-500);
+}
+
+.commentContentText {
+  color: var(--gray-300);
+  margin-top: 1rem;
+}
+
+.commentFooter {
+  margin-top: 1rem;
+}
+
+.footerBtnLike {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  color: var(--gray-400);
+  cursor: pointer;
+  display: flex;
+}
+
+.footerBtnLike:hover {
+  color: var(--green-300);
+}
+
+.footerBtnLike svg {
+  margin-right: 0.5rem;
+}
+
+.footerBtnLike span::before {
+  content: '\2022';
+  padding: 0 0.25rem;
+}

@@ -1,3 +1,4 @@
+import { Comment } from '../Comment'
 import {
   post,
   postHeader,
@@ -15,7 +16,8 @@ import {
   formCommentText,
   formCommentTextarea,
   formCommentFooter,
-  formCommentButton
+  formCommentButton,
+  commentList
 } from './styles.module.css';
 
 export const Post = () => {
@@ -40,6 +42,7 @@ export const Post = () => {
           Publicado há 1h
         </time>
       </header>
+
       <div className={content}>
         <p className={contentText}>Fala galeraa 👋</p>
         <p className={contentText}>
@@ -56,6 +59,7 @@ export const Post = () => {
           <a className={hashtags} href="">#rocketseat</a>
         </p>
       </div>
+
       <form className={formComment}>
         <strong 
           className={formCommentText}
@@ -66,6 +70,7 @@ export const Post = () => {
           className={formCommentTextarea} 
           placeholder="Deixe um comentário" 
         />
+
         <footer className={formCommentFooter}>
           <button 
             className={formCommentButton} 
@@ -73,7 +78,14 @@ export const Post = () => {
               Publicar
           </button>
         </footer>
+        
       </form>
+
+      <div className={commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
     </article>
   );
 };
